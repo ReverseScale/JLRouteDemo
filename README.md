@@ -1,26 +1,17 @@
 # JLRouteDemo
 基于 JLRoute 实现的模块化示例，包括链接跳转原生页面、WebView页面和ReactNative页面 🤖
 
-> TableView 应该是项目开发中最常用的部件了，如果你感觉系统的原生方式语法较为‘冗余’，那款三方库一定很适合你。
+> 模块化已经成为调剂庞大项目结构的一剂良药，对项目的开发、维护和后续的扩展的好处已经不言而喻。
 
 ![](http://og1yl0w9z.bkt.clouddn.com/17-12-18/79869793.jpg)
 
-![](https://img.shields.io/badge/platform-iOS-red.svg) ![](https://img.shields.io/badge/language-Swift-blue.svg) ![](https://img.shields.io/badge/download-9.9MB-yellow.svg) ![](https://img.shields.io/badge/license-MIT%20License-brightgreen.svg) 
+![](https://img.shields.io/badge/platform-iOS-red.svg) ![](https://img.shields.io/badge/language-Objective--C-orange.svg)  ![](https://img.shields.io/badge/download-9.9MB-yellow.svg) ![](https://img.shields.io/badge/license-MIT%20License-brightgreen.svg) 
 
 
 ### 🤖 要求
 
-* iOS 9.0+
-* Xcode 9.0+
-* Swift 4
-
-
-### 🎨 测试 UI 什么样子？
-
-| 名称 |1.展示页 |2.展示页 |3.展示页 |
-| ------------- | ------------- | ------------- | ------------- | 
-| 截图 | ![](http://og1yl0w9z.bkt.clouddn.com/17-12-18/65224594.jpg) | ![](http://og1yl0w9z.bkt.clouddn.com/17-12-18/23991764.jpg) | ![](http://og1yl0w9z.bkt.clouddn.com/17-12-18/81987650.jpg) | 
-| 描述 | 日期选择 | 主题切换 | 选项卡切换 | 
+* iOS 8.0+
+* Xcode 7.0+
 
 
 ### 🎯 安装方法
@@ -33,7 +24,19 @@ source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '9.0'
 use_frameworks!
 
-pod 'Eureka'
+pod 'JLRoutes', '~> 2.0.1'
+
+# 'node_modules'目录一般位于根目录中
+# 但是如果你的结构不同，那你就要根据实际路径修改下面的`:path`
+pod 'React', :path => './node_modules/react-native', :subspecs => [
+    'Core',
+    'RCTText',
+    'RCTNetwork',
+    'RCTWebSocket', # 这个模块是用于调试功能的
+    # 在这里继续添加你所需要的模块
+]
+# 如果你的RN版本 >= 0.42.0，请加入下面这行
+pod "Yoga", :path => "./node_modules/react-native/ReactCommon/yoga"
 ```
 
 #### 其他操作
