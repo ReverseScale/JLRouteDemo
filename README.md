@@ -8,12 +8,13 @@
 ![](https://img.shields.io/badge/platform-iOS-red.svg) ![](https://img.shields.io/badge/language-Objective--C-orange.svg)  ![](https://img.shields.io/badge/download-9.9MB-yellow.svg) ![](https://img.shields.io/badge/license-MIT%20License-brightgreen.svg) 
 
 
+----
 ### 🤖 要求
 
 * iOS 8.0+
 * Xcode 7.0+
 
-
+----
 ### 🎯 安装方法
 
 #### 安装
@@ -49,10 +50,12 @@ pod "Yoga", :path => "./node_modules/react-native/ReactCommon/yoga"
 npm start
 ```
 
-
+----
 ### 🛠 JLRoutes的工作流程和原理
 
 #### 单一的Scheme注册过程：
+
+![](http://og1yl0w9z.bkt.clouddn.com/18-1-16/25969929.jpg)
 
 1.调用注册方法（用户注册routePattern，默认优先级0）
 
@@ -69,8 +72,6 @@ npm start
 （JLRRouteDefinition对象包括有路径，参数解析，block等信息）
 
 #### 单一的Scheme调用过程：
-
-![](http://og1yl0w9z.bkt.clouddn.com/18-1-16/25969929.jpg)
 
 1.调用URL
 
@@ -268,13 +269,13 @@ return NO;
 自定义路由解析
 如果你想自己定制一个路由编辑，你可以继承JLRouteDefinition并且用 addRoute：方法去添加你自定义类的对象。
 
-
+----
 ### 📝 调研来源
 
 JLRoutes:https://github.com/joeldev/JLRoutes
 JLRoutes资料博客：https://www.varsiri.com/archives/305
 
-
+----
 ### ⚖ 协议
 
 ```
@@ -301,6 +302,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ```
 
+----
 ### 😬 联系
 
 * 微信 : WhatsXie
