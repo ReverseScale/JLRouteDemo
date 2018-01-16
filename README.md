@@ -43,7 +43,7 @@ pod "Yoga", :path => "./node_modules/react-native/ReactCommon/yoga"
 #### 启动 ReactNative 环境
 1.修改项目ModuleARNPageViewController.m IP 跳转地址
 
-![](http://og1yl0w9z.bkt.clouddn.com/18-1-16/19903810.jpg)
+![](http://og1yl0w9z.bkt.clouddn.com/18-1-16/87041593.jpg)
 
 2.进入项目所在目录，运行
 ```
