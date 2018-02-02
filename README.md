@@ -46,6 +46,7 @@ pod "Yoga", :path => "./node_modules/react-native/ReactCommon/yoga"
 ![](http://og1yl0w9z.bkt.clouddn.com/18-1-16/87041593.jpg)
 
 2.进入项目所在目录，运行
+
 ```
 npm start
 ```
@@ -101,6 +102,7 @@ JLRRouteResponse *response = [route routeResponseForRequest:request decodePlusSy
 #### JLRoutes的URL注册规则：
 
 ![](http://og1yl0w9z.bkt.clouddn.com/18-1-16/63077154.jpg)
+
 1.普通注册
 
 ```
