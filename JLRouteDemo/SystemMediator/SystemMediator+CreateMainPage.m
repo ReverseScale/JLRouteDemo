@@ -11,23 +11,17 @@
 @implementation SystemMediator (CreateMainPage)
 
 - (void)createMainPage {
-    Class tabBarClass = NSClassFromString(@"TabBarController");
-    Class moduleAClass = NSClassFromString(@"ModuleAMainViewController")?:NSClassFromString(@"UIViewController");
-    Class moduleBClass = NSClassFromString(@"ModuleBMainViewController")?:NSClassFromString(@"UIViewController");
+    self.tabbar = [[CustomTabBar alloc] init];
     
-    id tabBarController = [[tabBarClass alloc] init];
-    UIViewController *moduleAController = [[moduleAClass alloc] init];
-    UIViewController *moduleBController = [[moduleBClass alloc] init];
-    
-    moduleAController.tabBarItem.title = @"ModuleA";
-    moduleBController.tabBarItem.title = @"ModuleB";
-    
-    if ([tabBarController isKindOfClass:[UITabBarController class]]) {
-        [tabBarController performSelector:@selector(setViewControllers:) withObject:@[moduleAController,moduleBController]];
-    }
-    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:tabBarController];
-    [nav setNavigationBarHidden:NO];
-    [[[UIApplication sharedApplication] delegate] window].rootViewController = nav;
+    //设置数字角标(可选)
+    [self.tabbar showBadgeMark:100 index:1];
+    //设置为根控制器
+    [[[UIApplication sharedApplication] delegate] window].rootViewController = self.tabbar;
+
+}
+
+- (void)cleanTabBar:(NSInteger)index {
+    [self.tabbar hideMarkIndex:1];
 }
 
 @end

@@ -8,8 +8,10 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "CustomTabBar.h"
 
 @interface SystemMediator : NSObject
+@property (nonatomic, strong) CustomTabBar *tabbar;
 
 + (instancetype)sharedInstance;
 

@@ -22,8 +22,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.title = @"ModuleA";
-    
+    self.navigationItem.title = @"示例";
+
     self.view.backgroundColor = [UIColor whiteColor];
 
     [self.view addSubview:self.table];

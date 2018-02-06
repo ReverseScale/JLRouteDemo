@@ -11,5 +11,5 @@
 @interface SystemMediator (CreateMainPage)
 
 - (void)createMainPage;
-
+- (void)cleanTabBar:(NSInteger)index;
 @end

@@ -7,6 +7,7 @@
 //
 
 #import "ModuleBMainViewController.h"
+#import "SystemMediator+CreateMainPage.h"
 
 @interface ModuleBMainViewController ()
 
@@ -19,7 +20,9 @@
     
     self.view.backgroundColor = [UIColor whiteColor];
     
-    self.title = @"ModuleB";
+    self.navigationItem.title = @"未读";
+    
+    [[SystemMediator sharedInstance] cleanTabBar:1];
 }
 
 - (void)didReceiveMemoryWarning {
