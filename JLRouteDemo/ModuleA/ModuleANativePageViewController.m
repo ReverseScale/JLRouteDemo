@@ -19,12 +19,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    // 导航栏
-    self.navigationController.navigationBarHidden = YES;
+
+    self.title = @"Native";
     
-    [self.view setBackgroundColor:[UIColor whiteColor]];
-    
+    self.view.backgroundColor = [UIColor whiteColor];
+
+    [self setupLabel];
+}
+
+- (void)setupLabel {
     NSString *textTitle = [self.parameter objectForKey:@"text"];
     
     NSLog(@"userId:%@, age:%@", [self.parameter objectForKey:@"userId"], [self.parameter objectForKey:@"age"]);
@@ -35,14 +38,6 @@
     label.textAlignment = NSTextAlignmentCenter;
     [self.view addSubview:label];
     label.center = self.view.center;
-    
-    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-    [button setFrame:CGRectMake(0, CGRectGetHeight(self.view.frame)-44, CGRectGetWidth(self.view.frame), 44)];
-    [button setTitle:@"点击返回" forState:UIControlStateNormal];
-    [self.view addSubview:button];
-    [button addTarget:self action:@selector(buttonAction:) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:button];
-    [button setBackgroundColor:[UIColor redColor]];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -71,12 +66,10 @@
     NSError *err;
     NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:jsonData options:NSJSONReadingMutableContainers error:&err];
     
-    if(err) {
+    if (err) {
         NSLog(@"json解析失败：%@",err);
         return nil;
     }
     return dic;
 }
-
-
 @end

@@ -1,25 +1,24 @@
 //
-//  ModuleBMainViewController.m
+//  TabBarController.m
 //  JLRouteTest
 //
 //  Created by mac on 2017/3/30.
 //  Copyright © 2017年 GY. All rights reserved.
 //
 
-#import "ModuleBMainViewController.h"
+#import "TabBarController.h"
 
-@interface ModuleBMainViewController ()
+@interface TabBarController ()
 
 @end
 
-@implementation ModuleBMainViewController
+@implementation TabBarController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    self.view.backgroundColor = [UIColor whiteColor];
-    
-    self.title = @"ModuleB";
+    // Do any additional setup after loading the view.
+    // 导航栏
+    self.navigationController.navigationBarHidden = NO;
 }
 
 - (void)didReceiveMemoryWarning {

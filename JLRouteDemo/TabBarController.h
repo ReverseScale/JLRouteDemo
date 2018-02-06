@@ -1,5 +1,5 @@
 //
-//  MianViewController.h
+//  TabBarController.h
 //  JLRouteTest
 //
 //  Created by mac on 2017/3/30.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MianViewController : UITabBarController
+@interface TabBarController : UITabBarController
 
 @end

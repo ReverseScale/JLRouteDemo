@@ -18,7 +18,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self.view setBackgroundColor:[UIColor whiteColor]];
+    self.title = @"ReactNative";
+    
+    self.view.backgroundColor = [UIColor whiteColor];
+    
+    [self setupReactNative];
+}
+
+- (void)setupReactNative {
     NSURL *jsCodeLocation;
     jsCodeLocation = [NSURL URLWithString:@"http://10.0.0.65:8081/index.ios.bundle?platform=ios&dev=true"];
     RCTRootView *rootView = [[RCTRootView alloc] initWithBundleURL:jsCodeLocation
@@ -28,17 +35,9 @@
     //注意，这里是 @"EmbedRNMeituan"
     rootView.frame = CGRectMake(0, 64, 300, 300);
     [self.view addSubview:rootView];
-    
-    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-    [button setFrame:CGRectMake(0, CGRectGetHeight(self.view.frame)-44, CGRectGetWidth(self.view.frame), 44)];
-    [button setTitle:@"点击返回" forState:UIControlStateNormal];
-    [self.view addSubview:button];
-    [button addTarget:self action:@selector(buttonAction:) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:button];
-    [button setBackgroundColor:[UIColor redColor]];
 }
 
--(void)dealloc {
+- (void)dealloc {
     NSLog(@"%@",@"ModuleARNPageViewController dealloc");
 }
 

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2795FC7F3789BE2EBA2986F8 /* libPods-JLRouteDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ACC333285E0A477AFA89A70D /* libPods-JLRouteDemo.a */; };
 		2D791E7914F40120CEE767E5 /* libPods-JLRouteDemoUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D67A6FAD1C39EAB565703A5C /* libPods-JLRouteDemoUITests.a */; };
+		340890AC2029471F00E4D2AE /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 340890AB2029471E00E4D2AE /* Default.png */; };
 		347764A01FF0E1B10061A221 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3477649F1FF0E1B10061A221 /* AppDelegate.m */; };
 		347764A31FF0E1B10061A221 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 347764A21FF0E1B10061A221 /* ViewController.m */; };
 		347764A61FF0E1B10061A221 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 347764A41FF0E1B10061A221 /* Main.storyboard */; };
@@ -26,7 +27,7 @@
 		347764ED1FF0E78F0061A221 /* ModuleANativePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 347764E21FF0E78C0061A221 /* ModuleANativePageViewController.m */; };
 		347764EE1FF0E78F0061A221 /* ModuleARNPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 347764E41FF0E78C0061A221 /* ModuleARNPageViewController.m */; };
 		347764F01FF0E78F0061A221 /* ModuleBMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 347764E91FF0E78F0061A221 /* ModuleBMainViewController.m */; };
-		347764F31FF0E80A0061A221 /* MianViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 347764F21FF0E80A0061A221 /* MianViewController.m */; };
+		347764F31FF0E80A0061A221 /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 347764F21FF0E80A0061A221 /* TabBarController.m */; };
 		459532EAD7C95B5A5BC12E43 /* libPods-JLRouteDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CCBC7586FF121BE3053BD6D /* libPods-JLRouteDemoTests.a */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +50,7 @@
 
 /* Begin PBXFileReference section */
 		198591DCBC9033F1709B81FE /* Pods-JLRouteDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JLRouteDemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JLRouteDemoUITests/Pods-JLRouteDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		340890AB2029471E00E4D2AE /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		3477649B1FF0E1B10061A221 /* JLRouteDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JLRouteDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3477649E1FF0E1B10061A221 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3477649F1FF0E1B10061A221 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -83,8 +85,8 @@
 		347764E41FF0E78C0061A221 /* ModuleARNPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModuleARNPageViewController.m; sourceTree = "<group>"; };
 		347764E81FF0E78F0061A221 /* ModuleBMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModuleBMainViewController.h; sourceTree = "<group>"; };
 		347764E91FF0E78F0061A221 /* ModuleBMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModuleBMainViewController.m; sourceTree = "<group>"; };
-		347764F11FF0E8070061A221 /* MianViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MianViewController.h; sourceTree = "<group>"; };
-		347764F21FF0E80A0061A221 /* MianViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MianViewController.m; sourceTree = "<group>"; };
+		347764F11FF0E8070061A221 /* TabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarController.h; sourceTree = "<group>"; };
+		347764F21FF0E80A0061A221 /* TabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarController.m; sourceTree = "<group>"; };
 		3AF61F5864C27CBEB8C17EB1 /* Pods-JLRouteDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JLRouteDemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JLRouteDemoUITests/Pods-JLRouteDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		50AB3E9BBC0543396E79CA31 /* Pods-JLRouteDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JLRouteDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JLRouteDemoTests/Pods-JLRouteDemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		9CCBC7586FF121BE3053BD6D /* libPods-JLRouteDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JLRouteDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -123,6 +125,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		340890AD20294AE500E4D2AE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				347764DF1FF0E78C0061A221 /* ModuleAModel.h */,
+				347764E01FF0E78C0061A221 /* ModuleAModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		347764921FF0E1B10061A221 = {
 			isa = PBXGroup;
 			children = (
@@ -148,15 +159,16 @@
 		3477649D1FF0E1B10061A221 /* JLRouteDemo */ = {
 			isa = PBXGroup;
 			children = (
+				3477649E1FF0E1B10061A221 /* AppDelegate.h */,
+				3477649F1FF0E1B10061A221 /* AppDelegate.m */,
+				347764F11FF0E8070061A221 /* TabBarController.h */,
+				347764F21FF0E80A0061A221 /* TabBarController.m */,
 				347764D01FF0E6C20061A221 /* SystemMediator */,
 				347764DA1FF0E78C0061A221 /* ModuleA */,
 				347764E71FF0E78F0061A221 /* ModuleB */,
-				3477649E1FF0E1B10061A221 /* AppDelegate.h */,
-				3477649F1FF0E1B10061A221 /* AppDelegate.m */,
-				347764F11FF0E8070061A221 /* MianViewController.h */,
-				347764F21FF0E80A0061A221 /* MianViewController.m */,
 				347764A11FF0E1B10061A221 /* ViewController.h */,
 				347764A21FF0E1B10061A221 /* ViewController.m */,
+				340890AB2029471E00E4D2AE /* Default.png */,
 				347764A41FF0E1B10061A221 /* Main.storyboard */,
 				347764A71FF0E1B10061A221 /* Assets.xcassets */,
 				347764A91FF0E1B10061A221 /* LaunchScreen.storyboard */,
@@ -208,8 +220,7 @@
 				347764E41FF0E78C0061A221 /* ModuleARNPageViewController.m */,
 				347764DB1FF0E78C0061A221 /* ModuleAH5PageViewController.h */,
 				347764DC1FF0E78C0061A221 /* ModuleAH5PageViewController.m */,
-				347764DF1FF0E78C0061A221 /* ModuleAModel.h */,
-				347764E01FF0E78C0061A221 /* ModuleAModel.m */,
+				340890AD20294AE500E4D2AE /* Model */,
 			);
 			path = ModuleA;
 			sourceTree = "<group>";
@@ -363,6 +374,7 @@
 			files = (
 				347764AB1FF0E1B10061A221 /* LaunchScreen.storyboard in Resources */,
 				347764A81FF0E1B10061A221 /* Assets.xcassets in Resources */,
+				340890AC2029471F00E4D2AE /* Default.png in Resources */,
 				347764A61FF0E1B10061A221 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -544,7 +556,7 @@
 				347764D81FF0E6C30061A221 /* SystemMediator+CreateMainPage.m in Sources */,
 				347764AE1FF0E1B10061A221 /* main.m in Sources */,
 				347764A01FF0E1B10061A221 /* AppDelegate.m in Sources */,
-				347764F31FF0E80A0061A221 /* MianViewController.m in Sources */,
+				347764F31FF0E80A0061A221 /* TabBarController.m in Sources */,
 				347764EA1FF0E78F0061A221 /* ModuleAH5PageViewController.m in Sources */,
 				347764EC1FF0E78F0061A221 /* ModuleAModel.m in Sources */,
 				347764D71FF0E6C30061A221 /* RNOpenNativeMediator.m in Sources */,
@@ -711,9 +723,8 @@
 			baseConfigurationReference = CBB236B8EAA0A5BC6567B467 /* Pods-JLRouteDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = DHQ5WDNWKL;
+				DEVELOPMENT_TEAM = 7QT42R489Z;
 				INFOPLIST_FILE = JLRouteDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = R.S.JLRouteDemo;
@@ -727,9 +738,8 @@
 			baseConfigurationReference = AB0F8BF8FBF743B17333B781 /* Pods-JLRouteDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = DHQ5WDNWKL;
+				DEVELOPMENT_TEAM = 7QT42R489Z;
 				INFOPLIST_FILE = JLRouteDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = R.S.JLRouteDemo;

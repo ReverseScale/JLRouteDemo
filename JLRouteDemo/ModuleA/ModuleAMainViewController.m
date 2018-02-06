@@ -21,19 +21,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    [self.view setBackgroundColor:[UIColor whiteColor]];
-    // 导航栏
-    self.navigationController.navigationBarHidden = YES;
     
-    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.view.frame), 64)];
-    label.backgroundColor = [UIColor colorWithRed:30/255.0f green:144/255.0f blue:255/255.0f alpha:1.0f];
-    label.text = @"ModuleA";
-    label.font = [UIFont systemFontOfSize:17.0];
-    label.textColor = [UIColor whiteColor];
-    label.textAlignment = NSTextAlignmentCenter;
-    [self.view addSubview:label];
+    self.title = @"ModuleA";
     
+    self.view.backgroundColor = [UIColor whiteColor];
+
     [self.view addSubview:self.table];
 }
 
@@ -79,13 +71,10 @@
         
     } else if (indexPath.row == 1) {
         viewUrl = [NSURL URLWithString:@"JLRoutesDemo://MouduleA/ModuleARNPageViewController/setParameter/999"];
-        
     } else if (indexPath.row == 2) {
         viewUrl = [NSURL URLWithString:@"JLRoutesDemo://MouduleA/ModuleAH5PageViewController/setParameter/666"];
-        
     } else {
         viewUrl = [[NSURL alloc] init];
-        
     }
     
     [[SystemMediator sharedInstance] openModuleWithURL:viewUrl];
@@ -103,7 +92,6 @@
     urlStr = [urlStr stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
     
 //    JLRouteTest://MouduleA/ModuleTestPageViewController/setParameter/666?userId=99999&age=18
-    
     return [NSURL URLWithString:urlStr];
 }
 

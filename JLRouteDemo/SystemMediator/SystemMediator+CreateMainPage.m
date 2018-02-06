@@ -11,22 +11,22 @@
 @implementation SystemMediator (CreateMainPage)
 
 - (void)createMainPage {
-    Class mainClass = NSClassFromString(@"MianViewController");
+    Class tabBarClass = NSClassFromString(@"TabBarController");
     Class moduleAClass = NSClassFromString(@"ModuleAMainViewController")?:NSClassFromString(@"UIViewController");
     Class moduleBClass = NSClassFromString(@"ModuleBMainViewController")?:NSClassFromString(@"UIViewController");
     
-    id mainController = [[mainClass alloc] init];
+    id tabBarController = [[tabBarClass alloc] init];
     UIViewController *moduleAController = [[moduleAClass alloc] init];
     UIViewController *moduleBController = [[moduleBClass alloc] init];
     
-    moduleAController.tabBarItem.title = @"A";
-    moduleBController.tabBarItem.title = @"B";
+    moduleAController.tabBarItem.title = @"ModuleA";
+    moduleBController.tabBarItem.title = @"ModuleB";
     
-    if ([mainController isKindOfClass:[UITabBarController class]]) {
-        [mainController performSelector:@selector(setViewControllers:) withObject:@[moduleAController,moduleBController]];
+    if ([tabBarController isKindOfClass:[UITabBarController class]]) {
+        [tabBarController performSelector:@selector(setViewControllers:) withObject:@[moduleAController,moduleBController]];
     }
-    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:mainController];
-    [nav setNavigationBarHidden:YES];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:tabBarController];
+    [nav setNavigationBarHidden:NO];
     [[[UIApplication sharedApplication] delegate] window].rootViewController = nav;
 }
 
