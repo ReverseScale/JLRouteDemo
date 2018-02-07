@@ -56,7 +56,7 @@ npm start
 
 #### 单一的Scheme注册过程：
 
-![](http://og1yl0w9z.bkt.clouddn.com/18-1-16/25969929.jpg)
+![](http://og1yl0w9z.bkt.clouddn.com/18-2-7/27262498.jpg)
 
 1.调用注册方法（用户注册routePattern，默认优先级0）
 
@@ -101,7 +101,7 @@ JLRRouteResponse *response = [route routeResponseForRequest:request decodePlusSy
 
 #### JLRoutes的URL注册规则：
 
-![](http://og1yl0w9z.bkt.clouddn.com/18-1-16/63077154.jpg)
+![](http://og1yl0w9z.bkt.clouddn.com/18-2-7/87488105.jpg)
 
 1.普通注册
 
