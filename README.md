@@ -60,7 +60,7 @@ npm start
 
 1.调用注册方法（用户注册routePattern，默认优先级0）
 
-```
+```Objective-C
 - (void)addRoute:(NSString *)routePattern handler:(BOOL (^__nullable)(NSDictionary<NSString *, id> *parameters))handlerBlock;
 ```
 
@@ -76,25 +76,25 @@ npm start
 
 1.调用URL
 
-```
+```Objective-C
 + (BOOL)routeURL:(NSURL *)URL
 ```
 
 2.解析URL，将参数，路由信息封装成JLRRouteRequest对象
 
-```
+```Objective-C
 - (instancetype)initWithURL:(NSURL *)URL alwaysTreatsHostAsPathComponent:(BOOL)alwaysTreatsHostAsPathComponent
 ```
 
 3.给JLrouteRequest对象和路由数组里的JLRRouteDefinition对象作比对，并且返回JLRRouteResponse 对象抽出参数和URL在数组里
 
-```
+```Objective-C
 JLRRouteResponse *response = [route routeResponseForRequest:request decodePlusSymbols:shouldDecodePlusSymbols];
 ```
 
 4.调用JLRRouteResponse 对象里面的回调方法
 
-```
+```Objective-C
 [route callHandlerBlockWithParameters:finalParameters];
 ```
 
@@ -105,7 +105,7 @@ JLRRouteResponse *response = [route routeResponseForRequest:request decodePlusSy
 
 1.普通注册
 
-```
+```Objective-C
 JLRoutes *routes = [JLRoutes globalRoutes];
 [routes addRoute:@"/user/view/:userID" handler:^BOOL(NSDictionary *parameters) {
 NSString *userID = parameters[@"userID"]; // defined in the route by specifying ":userID"
@@ -118,7 +118,7 @@ URL里，分号表示这个是参数
 
 另外一种注册方式，下标注册法
 
-```
+```Objective-C
 JLRoutes.globalRoutes[@"/route/:param"] = ^BOOL(NSDictionary *parameters) {
 // ...
 };
@@ -126,7 +126,7 @@ JLRoutes.globalRoutes[@"/route/:param"] = ^BOOL(NSDictionary *parameters) {
 
 如何按照以上的方式注册，在任何时刻（包括在其它的APP）你都可以调用这个URL。
 
-```
+```Objective-C
 NSURL *viewUserURL = [NSURL URLWithString:@"myapp://user/view/joeldev"];
 [[UIApplication sharedApplication] openURL:viewUserURL];
 ```
@@ -137,7 +137,7 @@ NSURL *viewUserURL = [NSURL URLWithString:@"myapp://user/view/joeldev"];
 
 字典参数总包括至少一下3个键：
 
-```
+```Objective-C
 {
 "JLRouteURL":  "(the NSURL that caused this block to be fired)",
 "JLRoutePattern": "(the actual route pattern string)",
@@ -155,7 +155,7 @@ NSURL *viewUserURL = [NSURL URLWithString:@"myapp://user/view/joeldev"];
 
 2.复杂注册
 
-```
+```Objective-C
 [[JLRoutes globalRoutes] addRoute:@"/:object/:action/:primaryKey" handler:^BOOL(NSDictionary *parameters) {
 NSString *object = parameters[@"object"];
 NSString *action = parameters[@"action"];
@@ -167,14 +167,14 @@ return YES;
 
 这个地址会被匹配很多URL，如/user/view/joeldev or /post/edit/123。这些URL上的是参数。
 
-```
+```Objective-C
 NSURL *editPost = [NSURL URLWithString:@"myapp://post/edit/123?debug=true&foo=bar"];
 [[UIApplication sharedApplication] openURL:editPost];
 ```
 
 这时，pramater字典就会是以下这样的（传参）
 
-```
+```Objective-C
 {
 "object": "post",
 "action": "edit",
@@ -191,7 +191,7 @@ NSURL *editPost = [NSURL URLWithString:@"myapp://post/edit/123?debug=true&foo=ba
 
 JLRoutes支持用指定的URL scheme来创建路由。相同的scheme才能被匹配。默认地，所有的URL会设置进global scheme。
 
-```
+```Objective-C
 [[JLRoutes globalRoutes] addRoute:@"/foo" handler:^BOOL(NSDictionary *parameters) {
 // This block is called if the scheme is not 'thing' or 'stuff' (see below)
 return YES;
@@ -208,7 +208,7 @@ return YES;
 
 如果你调用的使用，是这样调用的
 
-```
+```Objective-C
 [[JLRoutes globalRoutes] addRoute:@"/global" handler:^BOOL(NSDictionary *parameters) {
 return YES;
 }];
@@ -218,7 +218,7 @@ return YES;
 
 当然，你可以设置，如果指定的scheme没有这个URL，去查询global scheme 有没有。你需要设置一个属性。
 
-```
+```Objective-C
 [JLRoutes routesForScheme:@"thing"].shouldFallbackToGlobalRoutes = YES;
 ```
 
@@ -230,7 +230,7 @@ return YES;
 
 例如，如果你注册URL如下:
 
-```
+```Objective-C
 [[JLRoutes globalRoutes] addRoute:@"/wildcard/*" handler:^BOOL(NSDictionary *parameters) {
 NSArray *pathComponents = parameters[JLRouteWildcardComponentsKey];
 if ([pathComponents count] > 0 && [pathComponents[0] isEqualToString:@"joker"]) {
@@ -248,7 +248,7 @@ return NO;
 
 如果路由地址设置样式有括号，如：/the(/foo/:a)(/bar/:b)，其实它代表的URL有如下：
 
-```
+```Objective-C
 /the/foo/:a/bar/:b
 /the/foo/:a
 /the/bar/:b
@@ -261,7 +261,7 @@ return NO;
 
 下面的方式，你可以查看Routes里所有注册的URL Routes。
 
-```
+```Objective-C
 /// All registered routes, keyed by scheme
 + (NSDictionary <NSString *, NSArray <JLRRouteDefinition *> *> *)allRoutes;
 /// Return all registered routes in the receiving scheme namespace.
