@@ -45,7 +45,7 @@ pod "Yoga", :path => "./node_modules/react-native/ReactCommon/yoga"
 
 ![](http://og1yl0w9z.bkt.clouddn.com/18-1-16/87041593.jpg)
 
-2.进入项目所在目录，运行
+2.进入项目所在目录，运行(首次运行需要 npm install)
 
 ```
 npm start
