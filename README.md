@@ -255,9 +255,7 @@ return NO;
 /the
 ```
 
-详细请查看Demo。。
-
-查询Routes。
+5.查询Routes
 
 下面的方式，你可以查看Routes里所有注册的URL Routes。
 
