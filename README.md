@@ -1,12 +1,14 @@
 # JLRouteDemo
+
+![](https://img.shields.io/badge/platform-iOS-red.svg) ![](https://img.shields.io/badge/language-Objective--C-orange.svg)  ![](https://img.shields.io/badge/download-9.9MB-yellow.svg) ![](https://img.shields.io/badge/license-MIT%20License-brightgreen.svg) 
+
+[EN](#Requirements) | [中文](#中文说明)
+
 Modular examples based on JLRoute implementations, including link-jump native pages, WebView pages, and ReactNative pages 🤖
 
 > Modularization has become a good medicine for adjusting the structure of a huge project. The benefits of project development, maintenance and subsequent expansion have become self-evident.
 
 ![](http://og1yl0w9z.bkt.clouddn.com/18-1-16/42003448.jpg)
-
-![](https://img.shields.io/badge/platform-iOS-red.svg) ![](https://img.shields.io/badge/language-Objective--C-orange.svg)  ![](https://img.shields.io/badge/download-9.9MB-yellow.svg) ![](https://img.shields.io/badge/license-MIT%20License-brightgreen.svg) 
-
 
 ----
 ### 🤖 Requirements
