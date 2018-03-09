@@ -317,9 +317,6 @@ SOFTWARE.
 
 ![](http://og1yl0w9z.bkt.clouddn.com/18-1-16/42003448.jpg)
 
-![](https://img.shields.io/badge/platform-iOS-red.svg) ![](https://img.shields.io/badge/language-Objective--C-orange.svg)  ![](https://img.shields.io/badge/download-9.9MB-yellow.svg) ![](https://img.shields.io/badge/license-MIT%20License-brightgreen.svg) 
-
-
 ----
 ### 🤖 要求
 
