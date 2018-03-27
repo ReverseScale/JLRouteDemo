@@ -150,6 +150,21 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		342D09C4206A4827008D0F8D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				340890B62029541E00E4D2AE /* home_tabbar_sel@2x.png */,
+				340890B52029541D00E4D2AE /* home_tabbar_sel@3x.png */,
+				340890B82029541F00E4D2AE /* home_tabbar@2x.png */,
+				340890B72029541E00E4D2AE /* home_tabbar@3x.png */,
+				340890BE2029542800E4D2AE /* msg_tabbar_sel@2x.png */,
+				340890BF2029542900E4D2AE /* msg_tabbar_sel@3x.png */,
+				340890C02029542A00E4D2AE /* msg_tabbar@2x.png */,
+				340890BD2029542800E4D2AE /* msg_tabbar@3x.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		347764921FF0E1B10061A221 = {
 			isa = PBXGroup;
 			children = (
@@ -184,14 +199,7 @@
 				347764E71FF0E78F0061A221 /* ModuleB */,
 				347764A11FF0E1B10061A221 /* ViewController.h */,
 				347764A21FF0E1B10061A221 /* ViewController.m */,
-				340890B62029541E00E4D2AE /* home_tabbar_sel@2x.png */,
-				340890B52029541D00E4D2AE /* home_tabbar_sel@3x.png */,
-				340890B82029541F00E4D2AE /* home_tabbar@2x.png */,
-				340890B72029541E00E4D2AE /* home_tabbar@3x.png */,
-				340890BE2029542800E4D2AE /* msg_tabbar_sel@2x.png */,
-				340890BF2029542900E4D2AE /* msg_tabbar_sel@3x.png */,
-				340890C02029542A00E4D2AE /* msg_tabbar@2x.png */,
-				340890BD2029542800E4D2AE /* msg_tabbar@3x.png */,
+				342D09C4206A4827008D0F8D /* Resources */,
 				340890AB2029471E00E4D2AE /* Default.png */,
 				347764A41FF0E1B10061A221 /* Main.storyboard */,
 				347764A71FF0E1B10061A221 /* Assets.xcassets */,
