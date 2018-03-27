@@ -12,7 +12,7 @@
 
 @interface ModuleAMainViewController ()<UITableViewDelegate, UITableViewDataSource>
 
-@property (nonatomic, strong) UITableView *table;
+@property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) NSArray *dataAry;
 
 @end
@@ -22,11 +22,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.navigationItem.title = @"示例";
-
     self.view.backgroundColor = [UIColor whiteColor];
 
-    [self.view addSubview:self.table];
+    [self.view addSubview:self.tableView];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -34,13 +32,13 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (UITableView *)table {
-    if (!_table) {
-        _table = [[UITableView alloc] initWithFrame:CGRectMake(0, 64, CGRectGetWidth(self.view.frame), CGRectGetHeight(self.view.frame)-64-44) style:UITableViewStylePlain];
-        _table.dataSource = self;
-        _table.delegate = self;
+- (UITableView *)tableView {
+    if (!_tableView) {
+        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 64, CGRectGetWidth(self.view.frame), CGRectGetHeight(self.view.frame)-64-44) style:UITableViewStylePlain];
+        _tableView.dataSource = self;
+        _tableView.delegate = self;
     }
-    return _table;
+    return _tableView;
 }
 
 - (NSArray *)dataAry {

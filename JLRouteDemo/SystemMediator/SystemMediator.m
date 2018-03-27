@@ -10,13 +10,10 @@
 #import "JLRoutes.h"
 
 @interface SystemMediator ()
-
 @property (nonatomic, strong) UINavigationController *mainNav;
-
 @end
 
 @implementation SystemMediator
-
 + (instancetype)sharedInstance {
     static SystemMediator *mediator;
     static dispatch_once_t onceToken;
@@ -45,7 +42,6 @@
         }
         if ([object isKindOfClass:[UIViewController class]]) {
             [self.mainNav pushViewController:(UIViewController *)object animated:YES];
-//            [self.mainNav presentViewController:(UIViewController *)object animated:YES completion:nil];
             return YES;
         } else {
             return NO;

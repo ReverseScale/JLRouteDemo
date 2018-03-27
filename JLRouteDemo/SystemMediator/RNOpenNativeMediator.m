@@ -11,11 +11,9 @@
 #import <React/RCTBridgeModule.h>
 
 @interface RNOpenNativeMediator ()<RCTBridgeModule>
-
 @end
 
 @implementation RNOpenNativeMediator
-
 RCT_EXPORT_MODULE()
 //RN跳转原生界面
 RCT_EXPORT_METHOD(RNOpenOneVC:(NSDictionary *)pageParameter) {

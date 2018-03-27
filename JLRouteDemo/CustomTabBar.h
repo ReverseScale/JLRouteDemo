@@ -21,7 +21,7 @@
  @param tabBar   tabBar
  @param viewController 选中的viewController
  */
--(void)CustomTabBar:(CustomTabBar *)tabBar didSelectViewController:(UIViewController *)viewController;
+- (void)CustomTabBar:(CustomTabBar *)tabBar didSelectViewController:(UIViewController *)viewController;
 
 @end
 

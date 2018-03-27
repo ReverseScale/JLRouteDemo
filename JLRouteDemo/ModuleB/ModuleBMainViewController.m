@@ -21,8 +21,6 @@
     self.view.backgroundColor = [UIColor whiteColor];
     
     self.navigationItem.title = @"未读";
-    
-    [[SystemMediator sharedInstance] cleanTabBar:1];
 }
 
 - (void)didReceiveMemoryWarning {

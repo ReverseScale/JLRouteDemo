@@ -123,9 +123,7 @@ static const float scale = 0.55;
     for (NSString *className in controllerArrayay) {
         Class class = NSClassFromString(className);
         UIViewController *viewcontroller = [[class alloc]init];
-        UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:viewcontroller];
-        [tabBarArr addObject:nav];
-        
+        [tabBarArr addObject:viewcontroller];
     }
     self.viewControllers = tabBarArr;
 }
@@ -160,7 +158,6 @@ static const float scale = 0.55;
         [button setTitleColor:TitleColor forState:UIControlStateNormal];
         //选中文字颜色
         [button setTitleColor:TitleColor_Sel forState:UIControlStateSelected];
-        
         button.titleLabel.font = [UIFont systemFontOfSize:TitleFontSize];
         [button setImage:[UIImage imageNamed:self.imageArray[i]] forState:UIControlStateNormal];
         [button setImage:[UIImage imageNamed:self.selImageArray[i]] forState:UIControlStateSelected];
