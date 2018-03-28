@@ -43,7 +43,7 @@
 
 - (NSArray *)dataAry {
     if (!_dataAry) {
-        _dataAry = @[@"Native 页面(传参数)",@"ReactNative 页面(npm start)",@"Web 页面(baidu.com)"];
+        _dataAry = @[@"Native 页面(Pass parameters)",@"ReactNative 页面(need 'npm start')",@"Web 页面(bing.com)"];
     }
     return _dataAry;
 }
