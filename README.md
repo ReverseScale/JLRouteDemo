@@ -8,7 +8,7 @@ Modular examples based on JLRoute implementations, including link-jump native pa
 
 > Modularization has become a good medicine for adjusting the structure of a huge project. The benefits of project development, maintenance and subsequent expansion have become self-evident.
 
-![](http://og1yl0w9z.bkt.clouddn.com/18-1-16/42003448.jpg)
+![](http://ghexoblogimages.oss-cn-beijing.aliyuncs.com/18-11-22/89699261.jpg)
 
 ----
 ### 🤖 Requirements
